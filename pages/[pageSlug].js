@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 export default function Page({ pageData }) {
     return (
         <>
-  <Navbar />
+  {/* <Navbar /> */}
 <PageBanner
         pageTitle="About Us"
         homePageUrl="/"
@@ -57,7 +57,7 @@ export default function Page({ pageData }) {
                     <div dangerouslySetInnerHTML={{ __html: pageData.content }} className="post-content container mx-auto lg:max-w-4xl" />
                 </article>
             </section>
-            <Footer/>
+            {/* <Footer/> */}
         </>
         
     );
