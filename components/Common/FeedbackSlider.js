@@ -24,7 +24,7 @@ const FeedbackSlider = () => {
                     <p>
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
-                      some form, by injected humour predefined words which don't
+                      some form, by injected humour predefined words which don&apos;t
                       look.
                     </p>
 
@@ -54,7 +54,7 @@ const FeedbackSlider = () => {
                     <p>
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
-                      some form, by injected humour predefined words which don't
+                      some form, by injected humour predefined words which don&apos;t
                       look.
                     </p>
 
@@ -84,7 +84,7 @@ const FeedbackSlider = () => {
                     <p>
                       There are many variations of passages of Lorem Ipsum
                       available, but the majority have suffered alteration in
-                      some form, by injected humour predefined words which don't
+                      some form, by injected humour predefined words which don&apos;t
                       look.
                     </p>
 
