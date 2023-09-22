@@ -12,7 +12,7 @@ import Team from "../components/Common/Team";
 const AboutTwo = () => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
 
       <PageBanner
         pageTitle="About Us"
@@ -32,7 +32,7 @@ const AboutTwo = () => {
 
       <CustomerFeedback />
       
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
