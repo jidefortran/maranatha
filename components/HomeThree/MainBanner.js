@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
 
@@ -14,7 +15,7 @@ const MainBanner = () => {
                   data-aos-duration="1200"
                   data-aos-delay="200"
                 >
-                  World’s Leading Machine Learning Company
+                  Worlds Leading Machine Learning Company
                 </h1>
 
                 <p
