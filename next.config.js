@@ -29,7 +29,8 @@ const path = require('path')
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    remotePatterns: [
+    domains:["test.maranathagroup.com.au"]
+,    remotePatterns: [
       {
         protocol: 'http',
         hostname: 'localhost',
