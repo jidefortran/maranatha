@@ -20,7 +20,7 @@ class MyDocument extends Document {
           />
           <link rel="icon" type="image/png" href="/favicon.png"></link>
 
-          <link rel="stylesheet" href="animate.min.css"/>
+ 
 
         </Head>
         <body>
