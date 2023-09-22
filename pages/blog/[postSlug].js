@@ -1,9 +1,6 @@
 import Head from "next/head";
-// import SiteHeader from "../../components/SiteHeader";
-// import SiteFooter from "../../components/SiteFooter";
-// import CommentForm from "../../components/CommentForm";
-// import { getComments } from "../../lib/comments";
-import Navbar from "../../components/Layouts/Navbar";
+
+// import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
 import Date from "../../components/Date";
 import { getPostSlugs, getSinglePost } from "../../components/lib/posts";
@@ -12,7 +9,7 @@ import { Rubik, Roboto_Slab } from '@next/font/google';
 
 import FeaturedImage from "../../components/FeaturedImage";
 import BlogSidebar from '../../components/Blog/BlogSidebar'
-import Footer from "../../components/Layouts/Footer";
+// import Footer from "../../components/Layouts/Footer";
 
 const rubik = Rubik({ subsets: ['latin'], display: 'swap' });
 const roboto_slab = Roboto_Slab({ subsets: ['latin'], display: 'swap' });
@@ -94,8 +91,8 @@ export default function Post({ postData, featuredImageUrl, comments, commentCoun
                 `}
             </style>
         </Head>
-
-        <Navbar />
+{/* 
+        <Navbar /> */}
           <PageBanner
         pageTitle={`${postData.title}`}
         homePageUrl="/"
@@ -180,7 +177,7 @@ export default function Post({ postData, featuredImageUrl, comments, commentCoun
             </section> */}
         </div>
         
-      <Footer/>
+      {/* <Footer/> */}
         </>
     );
 }                    {/* <h1 className={`${roboto_slab.className} text-6xl font-normal text-slate-100 relative z-10 py-8 mt-12`}>{postData.title}</h1> */}
