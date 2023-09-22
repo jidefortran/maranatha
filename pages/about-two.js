@@ -5,7 +5,7 @@ import ProfessionalSolutions from "../components/HomeFive/ProfessionalSolutions"
 import PartnerSlider from "../components/AboutTwo/PartnerSlider";
 import CustomerFeedback from "../components/HomeFive/CustomerFeedback";
 import Team from "../components/Common/Team";
-import Navbar from "../components/Layouts/Navbar";
+import Navbar from "../components/lLyouts/Navbar";
 import Footer from "../components/Layouts/Footer";
 const AboutTwo = () => {
   return (
