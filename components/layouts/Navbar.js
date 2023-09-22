@@ -78,12 +78,7 @@ const Navbar = () => {
               <div className={classOne} id="navbarSupportedContent">
                 <ul className="navbar-nav">
                   <li className="nav-item">
-                    <Link
-                      href="#"
-                      className={`nav-link ${currentPath == "/" && "active"}`}
-                    >
-                      Home <i className=""></i>
-                    </Link>
+                  
 
                     {/* <ul className="dropdown-menu">
                       <li className="nav-item">
