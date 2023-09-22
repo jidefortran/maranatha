@@ -2,10 +2,11 @@ import Head from "next/head";
 // import SiteHeader from "../components/SiteHeader";
 
 import { getPageSlugs, getSinglePage } from "../components/lib/pages"
-import Footer from "../components/Layouts/Footer";
-import PageBanner from "../components/Common/PageBanner";
-import Navbar from "../components/Layouts/Navbar";
 
+import PageBanner from "../components/Common/PageBanner";
+
+import Footer from "../components/Layouts/Footer";
+import Navbar from "../components/Layouts/Navbar";
 
 export async function getStaticProps({params}) {
     const pageData = await getSinglePage(params.pageSlug);

@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Layouts/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import AboutUsContent from "../components/AboutTwo/AboutUsContent";
 import ProfessionalSolutions from "../components/HomeFive/ProfessionalSolutions";
@@ -7,6 +6,7 @@ import PartnerSlider from "../components/AboutTwo/PartnerSlider";
 import CustomerFeedback from "../components/HomeFive/CustomerFeedback";
 import Team from "../components/Common/Team";
 import Footer from "../components/Layouts/Footer";
+import Navbar from "../components/Layouts/Navbar";
 
 const AboutTwo = () => {
   return (
