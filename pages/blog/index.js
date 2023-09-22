@@ -11,11 +11,11 @@ import Date from "../../components/Date";
 import LoadMore from "../../components/loadMore";
 import { useState } from "react";
 import { getPostList } from "../../components/lib/posts";
-// import Navbar from "../../components/Layouts/Navbar";
+import Navbar from "../../components/Layouts/Navbar";
 import PageBanner from "../../components/Common/PageBanner";
 
 import { set } from "date-fns";
-// import Footer from "../../components/Layouts/Footer";
+import Footer from "../../components/Layouts/Footer";
 
 export async function getStaticProps() {
     const allPosts = await getPostList();
@@ -33,7 +33,7 @@ export default function BlogHome({ allPosts }) {
 
     return (
         <>
-             {/* <Navbar /> */}
+             <Navbar />
           <PageBanner
         pageTitle="Blog Grid"
         homePageUrl="/"
@@ -105,7 +105,7 @@ Published on <Date dateString={post.date} />
                 <LoadMore posts={posts} setPosts={setPosts} />
                 </div>
         </main>
-      {/* <Footer/> */}
+      <Footer/>
         </>
     );
    
