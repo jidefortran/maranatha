@@ -45,7 +45,7 @@ const FeaturedServices = () => {
                   <Link href="/service-details">Value</Link>
                 </h3>
                 <p>
-                  Our commitment isn't just to be a service; it is to be your
+                  Our commitment isn&apos;t just to be a service; it is to be your
                   partner in navigating the tapestry of life. In Australia,
                   we have cultivated a haven where every person, every emotion,
                   and every ambition is valued.

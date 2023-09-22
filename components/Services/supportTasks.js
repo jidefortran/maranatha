@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Link from "next/link";
@@ -648,14 +649,14 @@ const supportTasks = () => {
                   companion in navigating the day-to-day. From assisting with
                   household chores to personal care routines, our support is
                   about sharing moments, elevating experiences, and celebrating
-                  daily triumphs. It’s not just about aiding; it's about weaving
+                  daily triumphs. It&apos;s not just about aiding; it&apos; about weaving
                   joy into the tapestry of daily life.
                 </p>
                 <p className="lead">
                   Our Support with Daily Tasks ensures that individuals have the
                   assistance they need, be it with household chores, personal
-                  care, or any everyday activity. It's more than just aiding;
-                  it's about sharing moments, fostering self-reliance, and
+                  care, or any everyday activity. It&apos; more than just aiding;
+                  it&apos;s about sharing moments, fostering self-reliance, and
                   celebrating small victories every day.
                 </p>
                 <Link href="/contact" className="btn btn-primary">

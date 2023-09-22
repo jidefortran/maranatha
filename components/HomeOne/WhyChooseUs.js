@@ -1,6 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
@@ -10,10 +11,10 @@ const WhyChooseUs = () => {
           <div className="row">
             <div className="col-lg-6 col-md-12">
               <div className="why-choose-us-image text-center " style={{alignSelf:"center"}}>
-                <img src="/images/team-smile.png" alt="image" />
+                <Image src="/images/team-smile.png" alt="image" width={600} height={800} />
               </div>
               <div className="why-choose-us-image text-center " style={{alignSelf:"center" ,marginTop: "2rem"}}>
-                <img src="/images/services-details/ndis.webp" alt="image" />
+                <Image src="/images/services-details/ndis.webp" alt="image"  width={600} height={800} />
               </div>
             </div>
 
@@ -82,8 +83,8 @@ const WhyChooseUs = () => {
                     <div className="single-why-choose-us-box">
                       <h3>Maranatha Wellbeing & Your NDIS Journey</h3>
                       <p className="lead">
-                        Here at Maranatha Wellbeing, we're more than just a
-                        registered NDIS service provider. We're your partner in
+                        Here at Maranatha Wellbeing, we&apos;re more than just a
+                        registered NDIS service provider. We&apos;re your partner in
                         crafting a future filled with independence. With our
                         carefully curated services, we aim to empower you today,
                         tomorrow, and always.{" "}
@@ -93,11 +94,11 @@ const WhyChooseUs = () => {
 
                   <div className="col-lg-12 col-md-12 col-sm-6 ">
                     <div className="single-why-choose-us-box">
-                      <h3>Join Us, and Let's Craft!</h3>
+                      <h3>Join Us, and Let&apos;s Craft!</h3>
                       <p className="lead">
                         Because every step you take towards well-being, is a
-                        step we're honored to take with you. Your well-being is
-                        a mosaic, intricate and vibrant, and we're here to
+                        step we&apos;re honored to take with you. Your well-being is
+                        a mosaic, intricate and vibrant, and we&apos;re here to
                         celebrate each piece. Welcome home.
                       </p>
                     </div>

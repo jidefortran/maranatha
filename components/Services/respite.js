@@ -14,12 +14,12 @@ const respite = () => {
           <p className="lead">
             Sometimes, both individuals and caregivers need a breather. Our
             Respite or Short Stay Accommodation provides that essential respite.
-            Whether it’s to rejuvenate, manage emergencies, or simply take a
+            Whether it&apos;s to rejuvenate, manage emergencies, or simply take a
             short break, our facilities stand ready to offer a temporary haven.
             These accommodations are designed with comfort, safety, and
             rejuvenation in mind, ensuring that each stay, however brief, feels
             like a refreshing interlude. Our Respite & Short Stay
-            Accommodation is more than just a place; it’s a comforting embrace
+            Accommodation is more than just a place; it&apos;s a comforting embrace
             when needed. If you want to seek a break, attending to emergencies,
             or just desiring a change in surroundings, we offer a haven to
             rejuvenate. Here, every corner is designed to evoke the warmth of

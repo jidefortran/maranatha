@@ -20,7 +20,7 @@ const mentalHealthContent = () => {
                 for instances when clients might be at risk to themselves or
                 others. The keystone of our Positive Behaviour Support (PBS) is
                 understanding the underlying reasons or motivations behind
-                specific behaviors. By doing so, we're better equipped to offer
+                specific behaviors. By doing so, we&apos;re better equipped to offer
                 targeted strategies, impart essential skills, and ensure
                 holistic support not only for the individual with the disability
                 but also for their wider network of family and friends.
@@ -45,15 +45,15 @@ const mentalHealthContent = () => {
             <div className="services-details-desc">
               <h3>Working Process</h3>
               <p className="lead">
-                Our seasoned team doesn't just specialize in support; they are
+                Our seasoned team doesn&apos;t just specialize in support; they are
                 adept at skills instruction, minimizing restrictive practices,
-                and ensuring both our staff and our clients' loved ones are
+                and ensuring both our staff and our clients&apos; loved ones are
                 equipped with the tools they need to foster a nurturing
-                environment. But that's not all. Our practitioners also offer a
+                environment. But that&apos;s not all. Our practitioners also offer a
                 number of services. From detailed consultations to crafting
                 individualized mental health support plans, and even staff
-                training, we are here to ensure that mental health isn't just
-                addressed,it's nurtured, understood, and prioritized.
+                training, we are here to ensure that mental health isn&apos;t just
+                addressed,it&apos;s nurtured, understood, and prioritized.
               </p>      <Link
                   href="/contact"
                   className="btn btn-primary"

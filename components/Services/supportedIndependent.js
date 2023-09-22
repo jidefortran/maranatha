@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import Link from "next/link";
@@ -620,14 +621,14 @@ const supportedIndependent = () => {
                 <h2 className="mb-8 text-3xl font-bold text-dark sm:text-4xl">
 Supported Independent Living                </h2>
                 <p className="mb-8 text-base lead">
-                  Your comfort and aspirations are our priority. Whether you're
+                  Your comfort and aspirations are our priority. Whether you&apos;re
                   in a home of your own or one we manage, our mission is to
                   support your independent living. By understanding your
                   passions, preferences, and future goals, we design impeccable
-                  programs to ensure you thrive right where you belong. We're
+                  programs to ensure you thrive right where you belong. We&apos;re
                   excited to announce an expansion in our services, with
                   numerous accessible homes now at your disposal. Our ambition?
-                  To connect you with a place that isn't just a house but a true
+                  To connect you with a place that isn&apos;t just a house but a true
                   reflection of your heart—a place you can lovingly call home
                 </p>
                 <Link
