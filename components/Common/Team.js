@@ -30,26 +30,26 @@ const Team = () => {
                     are crafted to touch the heart. Though our offerings are
                     vast, our approach is personal, ensuring that everyone gets
                     the special attention they deserve. Taking a leaf out of
-                    Australia's rich and varied tapestry, our values mirror its
+                    Australia&apos;s rich and varied tapestry, our values mirror its
                     spirit of togetherness, grit, and warmth. We aim to be a
                     lighthouse of hope, a comforting nook, and more than
                     anything, a home where everyone feels cherished. Choosing us
-                    means you're not just opting for services; you're joining a
+                    means you&apos;re not just opting for services; you&apos;re joining a
                     family that believes in the magic of compassion, empathy,
                     and shared dreams. Together, we believe we can craft
                     brighter days ahead. Your decision to consider us for your
-                    journey is a gift, and we're eager to stand by you at every
+                    journey is a gift, and we&apos;re eager to stand by you at every
                     twist and turn.
                   </p>
                   {/* <!-- Just replace the Video ID "UYJ5IjBRlW8" with the ID of your video on YouTube (Found within the URL) --> */}
-                  <a
+                  {/* <a
                     href="#"
                     data-videoid="UYJ5IjBRlW8"
                     data-videosite="youtube"
                     class="button video link-lightbox"
                   >
                     WATCH VIDEO <i class="fa fa-play" aria-hidden="true"></i>
-                  </a>
+                  </a> */}
                 </div>
               </div>
 

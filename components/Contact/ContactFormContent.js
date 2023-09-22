@@ -11,7 +11,7 @@ const ContactFormContent = () => {
             <span>Message Us</span>
             <h2>Drop us Message for any Query</h2>
             <p>
-            We're here, eager to listen and assist. Reach out and let's connect the human way. Contact Us today!
+            We&apos;re here, eager to listen and assist. Reach out and let&apos;s connect the human way. Contact Us today!
             </p>
           </div>
 
