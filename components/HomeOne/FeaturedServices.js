@@ -19,7 +19,7 @@ const FeaturedServices = () => {
                 </div>
 
                 <h3>
-                  <Link href="/service-details">
+                  <Link href="#">
                     Solutions
                   </Link>
                 </h3>
@@ -42,7 +42,7 @@ const FeaturedServices = () => {
                 </div>
 
                 <h3>
-                  <Link href="/service-details">Value</Link>
+                  <Link href="#">Value</Link>
                 </h3>
                 <p>
                   Our commitment isn&apos;t just to be a service; it is to be your
@@ -66,7 +66,7 @@ const FeaturedServices = () => {
                 </div>
 
                 <h3>
-                  <Link href="/service-details">Connection</Link>
+                  <Link href="#">Connection</Link>
                 </h3>
                 <p>
                 Journey with us to a sanctuary of support, empowerment, and genuine connection.

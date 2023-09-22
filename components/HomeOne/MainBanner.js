@@ -30,7 +30,7 @@ const MainBanner = () => {
                   story
                 </p>
 
-                <div
+                <div s
                   className="btn-box"
                   data-aos="fade-up"
                   data-aos-duration="1200"

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import Link from "next/link";
 import BlogCommentsArea from "../components/Blog/BlogCommentsArea";
@@ -7,9 +8,10 @@ import BlogSidebar from "../components/Blog/BlogSidebar";
 import Head from "next/head";
 import { gql } from "@apollo/client";
 import { client } from "../components/lib/apollo";
-import Footer from "../components/layouts/footer";
+
 import Header from "../components/layouts/header";
 import NavbarFour from "../components/Layouts/NavbarFour";
+import Footer from "../components/Layouts/Footer";
 
 
 

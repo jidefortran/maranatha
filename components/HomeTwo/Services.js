@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react/no-unescaped-entities */
 import React, { Component } from "react";
 import Link from "next/link";
@@ -42,14 +43,14 @@ export default class Services extends Component {
                   <p class="section-subtitle">
                     Our journey began with a simple, yet profound, vision: to
                     create an oasis where every individual, irrespective of
-                    their life's challenges, feels valued, supported, and
+                    their life&apos;s challenges, feels valued, supported, and
                     empowered. Every story, every journey, and every individual
-                    is unique. We understand this, and that's why we have
+                    is unique. We understand this, and that&apos;s why we have
                     pledged our commitment to being more than just a service –
                     we are a community, a family, dedicated to nurturing the
                     human spirit. At times, life can be a bit of a whirlwind,
-                    throwing curveballs when we least expect. We've all been
-                    there, needing a friend or a guiding hand. That's exactly
+                    throwing curveballs when we least expect. We&apos;ve all been
+                    there, needing a friend or a guiding hand. That&apos;s exactly
                     why our support centre came into being. We see the spark in
                     every individual, and with a bit of encouragement, we know
                     that spark can turn into a flame.
