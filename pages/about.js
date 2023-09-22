@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import Navbar from "../components/Layouts/Navbar";
-import Footer from "../components/Layouts/Footer";
+import Navbar from  "../components/Layouts/Navbar"
+import Footer from "../components/Layouts/Footer"
 import PageBanner from "../components/Common/PageBanner";
 import AboutContact from "../components/About/AboutContent";
 import Services from "../components/HomeTwo/Services";
