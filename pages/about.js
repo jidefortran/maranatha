@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Navbar from "../components/Layouts/Navbar";
+// import Navbar from "../components/Layouts/Navbar";
 import Footer from "../components/Layouts/Footer";
 import PageBanner from "../components/Common/PageBanner";
 import AboutContact from "../components/About/AboutContent";
@@ -12,7 +12,7 @@ import FeedbackSlider from "../components/Common/FeedbackSlider";
 const About = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <PageBanner
         pageTitle="About Us"

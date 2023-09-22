@@ -1,6 +1,6 @@
 import React from "react";
-import Navbar from "./components/Layouts/Navbar";
-import Footer from "./components/Layouts/Footer";
+// import Navbar from "../components/Layouts/Navbar";
+// import Footer from "../components/Layouts/Footer";
 import PageBanner from "../components/Common/PageBanner";
 import AboutUsContent from "../components/AboutTwo/AboutUsContent";
 import ProfessionalSolutions from "../components/HomeFive/ProfessionalSolutions";
@@ -12,7 +12,7 @@ import Team from "../components/Common/Team";
 const AboutTwo = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
 
       <PageBanner
         pageTitle="About Us"
@@ -32,7 +32,7 @@ const AboutTwo = () => {
 
       <CustomerFeedback />
       
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

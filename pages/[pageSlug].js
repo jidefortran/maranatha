@@ -1,7 +1,7 @@
 import Head from "next/head";
-// import SiteHeader from "../components/SiteHeader";
-import Navbar from "../components/Layouts/Navbar";
-import Footer from "../components/Layouts/Footer";
+
+// import Navbar from "../components/Layouts/Navbar";
+// import Footer from "../components/Layouts/Footer";
 import { getPageSlugs, getSinglePage } from "../components/lib/pages"
 
 import PageBanner from "../components/Common/PageBanner";
