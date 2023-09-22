@@ -8,7 +8,7 @@ import React from "react";
 // import SiteFooter from "../../components/SiteFooter";
  import FeaturedImage from "../../components/FeaturedImage";
 import Date from "../../components/Date";
-import LoadMore from "../../components/loadMore";
+import LoadMore from "../../components/LoadMore";
 import { useState } from "react";
 import { getPostList } from "../../components/lib/posts";
 import Navbar from "../../components/Layouts/Navbar";

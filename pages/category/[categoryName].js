@@ -7,7 +7,7 @@ import FeaturedImage from "../../components/FeaturedImage";
 import { useState } from "react";
 import Date from "../../components/Date";
 
-import LoadMore from "../../components/loadMore";
+import LoadMore from "../../components/LoadMore";
 import { getCategoryDetails, getCategorySlugs, getPostList } from "../../components/lib/posts";
 import Footer from "../../components/Layouts/Footer";
 
