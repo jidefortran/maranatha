@@ -1,7 +1,7 @@
 import Head from "next/head";
 
-import Navbar from "../components/Layouts/Navbar";
-import Footer from "../components/Layouts/Footer";
+import {Navbar} from "../components/Layouts/Navbar";
+import {Footer} from "../components/Layouts/Footer";
 import { getPageSlugs, getSinglePage } from "../components/lib/pages"
 
 import PageBanner from "../components/Common/PageBanner";
@@ -35,7 +35,7 @@ export async function getStaticPaths() {
 export default function Page({ pageData }) {
     return (
         <>
-  {/* <Navbar /> */}
+  <Navbar />
 <PageBanner
         pageTitle="About Us"
         homePageUrl="/"
@@ -57,7 +57,7 @@ export default function Page({ pageData }) {
                     <div dangerouslySetInnerHTML={{ __html: pageData.content }} className="post-content container mx-auto lg:max-w-4xl" />
                 </article>
             </section>
-            {/* <Footer/> */}
+            <Footer/>
         </>
         
     );
