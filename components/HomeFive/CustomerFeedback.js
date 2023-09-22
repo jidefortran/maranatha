@@ -40,7 +40,7 @@ const CustomerFeedback = () => {
                 <p>
                   There are many variations of passages of Lorem Ipsum available,
                   but the majority have suffered alteration in some form, by
-                  injected humour predefined words which don't look.
+                  injected humour predefined words which don&apos;t look.
                 </p>
                 <div className="client-info">
                   <h3>Filip Luis</h3>
@@ -54,7 +54,7 @@ const CustomerFeedback = () => {
                 <p>
                   There are many variations of passages of Lorem Ipsum available,
                   but the majority have suffered alteration in some form, by
-                  injected humour predefined words which don't look.
+                  injected humour predefined words which don&apos;t look.
                 </p>
                 <div className="client-info">
                   <h3>Steven Smith</h3>
@@ -68,7 +68,7 @@ const CustomerFeedback = () => {
                 <p>
                   There are many variations of passages of Lorem Ipsum available,
                   but the majority have suffered alteration in some form, by
-                  injected humour predefined words which don't look.
+                  injected humour predefined words which don&apos;t look.
                 </p>
                 <div className="client-info">
                   <h3>Sarah Taylor</h3>
