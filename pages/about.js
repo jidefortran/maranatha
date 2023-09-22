@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import Navbar from "../components/Layouts/Navbar";
+
 import PageBanner from "../components/Common/PageBanner";
 import AboutContact from "../components/About/AboutContent";
 import Services from "../components/HomeTwo/Services";
 import Team from "../components/Common/Team";
 import PartnerContent from "../components/Common/PartnerContent";
 import FeedbackSlider from "../components/Common/FeedbackSlider";
-
+import Navbar from "../components/Layouts/Navbar";
 import Footer from "../components/Layouts/Footer";
 
 const About = () => {

@@ -1,8 +1,9 @@
 import React from "react";
 import Navbar from "../components/Layouts/Navbar";
+import Footer from "../components/Layouts/Footer";
 import PageBanner from "../components/Common/PageBanner";
 import ContactFormContent from "../components/Contact/ContactFormContent";
-import Footer from "../components/Layouts/Footer";
+
 
 const Contact = () => {
   return (
