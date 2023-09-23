@@ -1,8 +1,14 @@
 import React from "react";
 
 export default async function graphqlRequest(query) {
-  const url = " https://test.maranathagroup.com.au/graphql";
+  const url = "http://test.maranathagroup.com.au/graphql";
   const headers = { "Content-Type": "application/json" };
+
+//   // if(process.env.WORDPRESS_AUTH_REFRESH_TOKEN) {
+//   //   headers[
+//   //       'Authorization'
+//   //   ] = `Bearer ${process.env.WORDPRESS_AUTH_REFRESH_TOKEN}`;
+// }//
 
   const res = await fetch(url, {
     headers,
