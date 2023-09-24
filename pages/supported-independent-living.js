@@ -11,10 +11,10 @@ const SupportedIndependentLiving = () => {
       <Navbar />
 
       <PageBanner
-        pageTitle="Services Four"
+        pageTitle="Supported Independent Living"
         homePageUrl="/"
         homePageText="Home"
-        activePageText="Services Four"
+        activePageText="Supported Independent Living"
         bgImgClass="item-bg8"
       />
 

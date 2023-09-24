@@ -18,7 +18,7 @@ const MainBanner = () => {
                   Discover a Place Where You Truly Belong
                 </h1>
 
-                <p
+                <p className="lead"
                   data-aos="fade-up"
                   data-aos-duration="1200"
                   data-aos-delay="200"

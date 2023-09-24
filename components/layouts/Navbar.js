@@ -388,62 +388,7 @@ const Navbar = () => {
                     </ul> */}
                   </li>
 
-                  <li className="nav-item">
-                    {/* <Link
-                      href="/shop/"
-                      className={`nav-link ${
-                        currentPath == "/shop/" && "active"
-                      }`}
-                    >
-                      Shop <i className="fas fa-chevron-down"></i>
-                    </Link> */}
-
-                    <ul className="dropdown-menu">
-                      {/* <li className="nav-item">
-                        <Link
-                          href="/shop/"
-                          className={`nav-link ${
-                            currentPath == "/shop/" && "active"
-                          }`}
-                        >
-                          Shop
-                        </Link>
-                      </li> */}
-
-                      <li className="nav-item">
-                        <Link
-                          href="/single-products/"
-                          className={`nav-link ${
-                            currentPath == "/single-products/" && "active"
-                          }`}
-                        >
-                          Single Products
-                        </Link>
-                      </li>
-
-                      {/* <li className="nav-item">
-                        <Link
-                          href="/cart/"
-                          className={`nav-link ${
-                            currentPath == "/cart/" && "active"
-                          }`}
-                        >
-                          Cart
-                        </Link>
-                      </li> */}
-
-                      {/* <li className="nav-item">
-                        <Link
-                          href="/checkout/"
-                          className={`nav-link ${
-                            currentPath == "/checkout/" && "active"
-                          }`}
-                        >
-                          Checkout
-                        </Link>
-                      </li> */}
-                    </ul>
-                  </li>
+          
 
                   <li className="nav-item">
                     <Link

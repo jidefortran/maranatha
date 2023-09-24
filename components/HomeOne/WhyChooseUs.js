@@ -31,7 +31,7 @@ const WhyChooseUs = () => {
                   <div className="col-lg-12 col-md-12 col-sm-6">
                     <div className="single-why-choose-us-box">
                       <h3> With us, you get assistance to</h3>
-                      <ul className="lead">
+                      <ul className="lead" style={{textAlign:"left"}}>
                      <li>Forge individual plans
                         spotlighting your aspirations for independent living.</li>  
                        <li>Cultivate and nurture friendships and embed yourself
@@ -54,7 +54,7 @@ const WhyChooseUs = () => {
 
                   <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="single-why-choose-us-box">
-                      <h3>Maranatha Wellbeing: Your Support and Inclusion</h3>
+                      <h2>Maranatha Wellbeing: Your Support and Inclusion</h2>
                       <p className="lead">
                         At Maranatha Wellbeing Australia, we pride ourselves on
                         being at the forefront of disability services for adults
@@ -67,7 +67,7 @@ const WhyChooseUs = () => {
 
                   <div className="col-lg-6 col-md-6 col-sm-6">
                     <div className="single-why-choose-us-box">
-                      <h3>Your Trusted NDIS Provider & Supportive Companion</h3>
+                      <h2>Your Trusted NDIS Provider & Supportive Companion</h2>
                       <p className="lead">
                         Our dedicated team of disability support workers,
                         combined with the heartfelt contributions of our
@@ -81,7 +81,7 @@ const WhyChooseUs = () => {
 
                   <div className="col-lg-12 col-md-12 col-sm-6">
                     <div className="single-why-choose-us-box">
-                      <h3>Maranatha Wellbeing & Your NDIS Journey</h3>
+                      <h2>Maranatha Wellbeing & Your NDIS Journey</h2>
                       <p className="lead">
                         Here at Maranatha Wellbeing, we&apos;re more than just a
                         registered NDIS service provider. We&apos;re your partner in
@@ -94,7 +94,7 @@ const WhyChooseUs = () => {
 
                   <div className="col-lg-12 col-md-12 col-sm-6 ">
                     <div className="single-why-choose-us-box">
-                      <h3>Join Us, and Let&apos;s Craft!</h3>
+                      <h2>Join Us, and Let&apos;s Craft!</h2>
                       <p className="lead">
                         Because every step you take towards well-being, is a
                         step we&apos;re honored to take with you. Your well-being is

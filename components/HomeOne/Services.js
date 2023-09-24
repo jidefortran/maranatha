@@ -26,12 +26,12 @@ const Services = () => {
                   <i className="fa-solid fa-hand-holding-hand"></i>
                 </div>
 
-                <h3>
+                <h2>
                   <Link href="/service-details">
                     Supported Independent Living
                   </Link>
-                </h3>
-                <p>
+                </h2>
+                <p className="lead">
                   Finding Your Forever Home With our innovative housing designs
                   and community housing providers, we are all set to help you
                   find—or even create—your forever home.
@@ -53,13 +53,13 @@ const Services = () => {
                   */}
                 </div>
 
-                <h3>
+                <h2>
                   <Link href="/service-details">
                     {" "}
                     Respite/Short Stay Accommodation
                   </Link>
-                </h3>
-                <p>
+                </h2>
+                <p className="lead">
                   Sometimes, both individuals and caregivers need a breather.
                   Our Respite or Short Stay Accommodation provides that
                   essential respite. Whether it’s to rejuvenate, manage
@@ -80,10 +80,10 @@ const Services = () => {
                   <i className="fa-solid fa-group-arrows-rotate"></i>
                 </div>
 
-                <h3>
-                  <Link href="/service-details">Community participation</Link>
-                </h3>
-                <p>
+                <h2>
+                  <Link href="/service-details">Community Participation</Link>
+                </h2>
+                <p className="lead">
                   Human connection and an active community life are threads that
                   weave the fabric of our daily existence. We, at Able,
                   wholeheartedly believe in fostering these connections,
@@ -104,12 +104,12 @@ const Services = () => {
                   <i className="fa-solid fa-head-side-virus"></i>
                 </div>
 
-                <h3>
+                <h2>
                   <Link href="/service-details">
                     Psycho-Social Recovery/Support Coordination
                   </Link>
-                </h3>
-                <p>
+                </h2>
+                <p className="lead">
                   Our Psycho-social Recovery and Support Coordination program
                   offers exactly that. With a structured approach, we assist
                   individuals in rediscovering their strengths, building
@@ -130,10 +130,10 @@ const Services = () => {
                   <i className="fa-solid fa-briefcase"></i>
                 </div>
 
-                <h3>
+                <h2>
                   <Link href="/service-details">Support with Daily Tasks</Link>
-                </h3>
-                <p>
+                </h2>
+                <p className="lead">
                   Life is a mosaic of moments, routines, and tasks. Yet, some
                   days, the seemingly mundane can feel like a mountain. With our
                   Support with Daily Tasks, we aim to be your steadfast
@@ -156,7 +156,7 @@ const Services = () => {
                 <h3>
                   <Link href="/service-details">Mental Health  Support</Link>
                 </h3>
-                <p >
+                <p  className="lead">
                   At Maranatha Wellbeing, we understand the intricate challenges
                   posed by mental health. Our dedicated mental health support
                   team has honed its expertise in assisting clients with diverse
