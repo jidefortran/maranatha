@@ -3,6 +3,7 @@ import Navbar from "../components/Layouts/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import FaqContent from "../components/Faq/FaqContent";
 import Footer from "../components/Layouts/Footer";
+import ContactUs from "../components/contactUs";
 
 const Faq = () => {
   return (
@@ -17,8 +18,8 @@ const Faq = () => {
         bgImgClass="item-bg1"
       />
 
-      <FaqContent />
-
+      {/* <FaqContent /> */}
+<ContactUs/>
       <Footer />
     </>
   );

@@ -39,6 +39,16 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
+/* @tailwind base; */
+@tailwind components;
+@tailwind utilities;
+
+
+
+.contactFooter{
+  margin-left: auto !important;
+  margin-right:auto !important;
+}
 
 .LayoutBlog {
   width: 1366px;

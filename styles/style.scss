@@ -40,6 +40,11 @@ This files table contents are outlined below>>>>>
 /*================================================
 Default CSS
 =================================================*/
+
+@import "~tailwindcss/base";
+@import "~tailwindcss/components";
+@import "~tailwindcss/utilities";
+
 .angry-grid {
   display: grid;
 
@@ -48,6 +53,12 @@ Default CSS
 
   gap: 0px;
   height: 100%;
+}
+
+
+.contactFooter{
+  margin-left: auto !important;
+  margin-right:auto !important;
 }
 
 .supportContainer {

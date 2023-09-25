@@ -75,7 +75,7 @@ const Navbar = () => {
                 <span className="icon-bar bottom-bar"></span>
               </button>
 
-              <div className={classOne} id="navbarSupportedContent">
+              <div className={classOne} id="navbarSupportedContent " style={{visibility:"visible"}}>
                 <ul className="navbar-nav">
                   <li className="nav-item">
                   
@@ -462,7 +462,7 @@ const Navbar = () => {
                     ></i>
                   </div>
 
-                  <Link href="/contact" className="btn btn-primary">
+                  <Link href="/contact-us" className="btn btn-primary">
                    Contact Us
                   </Link>
                 </div>
