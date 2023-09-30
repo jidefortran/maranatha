@@ -48,7 +48,7 @@ export default function CategoryArchive({ categoryPosts, categoryDetails }) {
         <Head>
             <title>{categoryDetails.name}</title>
         </Head>
-        <div className="h-[50vh] min-h-[20rem] bg-[url('/home.jpg')] relative">
+        <div className="">
             <div className="absolute bg-slate-900 opacity-40 inset-0 z-0"></div>
 
             {/* <SiteHeader className="header-category z-10 relative" /> */}

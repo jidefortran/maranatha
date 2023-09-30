@@ -43,7 +43,7 @@ export default function BlogHome({ allPosts }) {
       />
 
      
-        <div className="h-[50vh] min-h-[20rem] bg-[url('/home.jpg')] relative">
+        <div className="">
        
 
             <div className="container lg:max-w-4xl mx-auto">
