@@ -10,7 +10,7 @@ const Error = () => {
           <div className="d-table-cell">
             <div className="container">
               <div className="error-content">
-                <img src="/images/404.png" alt="error" />
+                <img src="/images/404.gif" alt="error" />
 
                 <h3>Page Not Found</h3>
                 <p>
@@ -19,7 +19,7 @@ const Error = () => {
                 </p>
 
                 <Link href="/" className="btn btn-primary">
-                  Go To Home
+                  Home
                 </Link>
               </div>
             </div>
