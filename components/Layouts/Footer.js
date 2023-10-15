@@ -126,7 +126,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <span>Phone:</span>
-                    049 3396 991
+                    +61 469 748 947
                   </li>
                  
                 </ul>
