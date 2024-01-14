@@ -47,6 +47,9 @@ export default function communityParticipation() {
                 >
                   Get Started
                 </Link>
+                <a href="tel:+61493396991" className="btn btn-secondary">
+                   Call Now 049 3396 991
+                  </a>
               </div>
             </div>
             <div class="col-md-5 offset-md-1 order-1 order-md-2">

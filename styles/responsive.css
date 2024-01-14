@@ -2698,6 +2698,9 @@
   }
   .main-banner-content {
     margin-left: 130px;
+    float: right;
+    margin-left: 130px;
+    max-width: 53%;
   }
   .coming-soon-area .coming-soon-content h3 {
     max-width: 520px;

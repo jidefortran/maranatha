@@ -140,9 +140,9 @@ const Footer = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <p>
-                  Copyright &copy;{currentYear} Bariton. All Rights Reserved{" "}
-                  <a href="https://envytheme.com/" target="_blank">
-                    EnvyTheme
+                  Copyright &copy;{currentYear} Maranatha Group. All Rights Reserved{" "}
+                  <a href="https://maranathagroup.com.au/" target="_blank">
+                    
                   </a>
                   .
                 </p>

@@ -3782,7 +3782,9 @@ $value_seven: 1550px;
         height: 100vh;
     }
     .main-banner-content {
+        float: right;
         margin-left: 130px;
+        max-width: 53%;
     }
     .coming-soon-area {
         .coming-soon-content {
