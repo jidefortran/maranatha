@@ -27,23 +27,23 @@ const Footer = () => {
 
                 <ul className="social">
                   <li>
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a href="https://www.facebook.com/maranathasupport/" target="_blank">
                       <i className="flaticon-facebook-letter-logo"></i>
                     </a>
                   </li>
-                  <li>
+                  {/* <li>
                     <a href="https://twitter.com/" target="_blank">
                       <i className="flaticon-twitter"></i>
                     </a>
-                  </li>
+                  </li> */}
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="https://www.instagram.com/maranatha_support/" target="_blank">
                       <i className="flaticon-instagram-logo"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.youtube.com/" target="_blank">
-                      <i className="flaticon-youtube-play-button"></i>
+                    <a href="https://www.linkedin.com/company/maranatha-wellbeing-support/" target="_blank">
+                      <i className="flaticon-youtube-play-button"></i> 
                     </a>
                   </li>
                 </ul>
@@ -126,7 +126,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <span>Phone:</span>
-                    049 3396 991
+                    +61 469 748 947
                   </li>
                  
                 </ul>

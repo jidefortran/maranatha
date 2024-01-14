@@ -1,5 +1,9 @@
 import React from "react";
 import Link from "next/link";
+import { fb } from "../../public/images/blog/1.jpg";
+import { insta } from "../../public/images/blog/2.jpg";
+import { linkedin } from "../../public/images/blog/2.jpg";
+import Image from "next/image";
 
 const BlogSidebar = () => {
   return (
@@ -20,12 +24,21 @@ const BlogSidebar = () => {
             </button>
           </form>
         </div>
-
         {/* Popular posts */}
-        <div className="widget widget_posts_thumb">
-          <h3 className="widget-title">Popular posts</h3>
-
-          <article className="item">
+        <h3 className="widget-title">Popular posts</h3>
+        <a href="https://www.instagram.com/maranatha_support/
+"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Image
+            src="/images/blog/2.jpg"
+            width={500}
+            height={500}
+            alt="facebook banner"
+          />
+        </a>{" "}
+        {/* <article className="item">
             <Link href="/blog-details" className="thumb">
               <span className="fullimage cover bg1" role="img"></span>
             </Link>
@@ -55,8 +68,8 @@ const BlogSidebar = () => {
             </div>
 
             <div className="clear"></div>
-          </article>
-
+          </article> */}
+        {/* 
           <article className="item">
             <Link href="/blog-details" className="thumb">
               <span className="fullimage cover bg3" role="img"></span>
@@ -72,13 +85,26 @@ const BlogSidebar = () => {
 
             <div className="clear"></div>
           </article>
-        </div>
-
+        </div>  */}
         {/* Recent posts */}
         <div className="widget widget_recent_entries">
-          <h3 className="widget-title">Recent posts</h3>
+          <h3 className="widget-title"></h3>
+          <a
+            href="https://www.linkedin.com/company/maranatha-wellbeing-support/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/images/blog/1.jpg"
+              width={500}
+              height={500}
+              alt="facebook banner"
+            />
+          </a>
 
-          <ul>
+          <h3 className="widget-title"></h3>
+
+          {/* <ul>
             <li>
               <Link href="/blog-details">
                 The security risks of changing package owners
@@ -109,14 +135,25 @@ const BlogSidebar = () => {
               </Link>
               <span className="post-date">March 19, 2020</span>
             </li>
-          </ul>
+          </ul> */}
         </div>
-
         {/* Categories */}
         <div className="widget widget_categories">
-          <h3 className="widget-title">Categories</h3>
+          <a
+            href="https://www.facebook.com/maranathasupport/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              src="/images/blog/3.jpg"
+              width={500}
+              height={500}
+              alt="facebook banner"
+            />
+          </a>
+          <h3 className="widget-title"></h3>
 
-          <ul>
+          {/* <ul>
             <li>
               <Link href="#">Business</Link>
             </li>
@@ -132,11 +169,10 @@ const BlogSidebar = () => {
             <li>
               <Link href="#">Uncategorized</Link>
             </li>
-          </ul>
+          </ul> */}
         </div>
-
         {/* Tags */}
-        <div className="widget widget_tag_cloud">
+        {/* <div className="widget widget_tag_cloud">
           <h3 className="widget-title">Tags</h3>
 
           <div className="tagcloud">
@@ -172,7 +208,7 @@ const BlogSidebar = () => {
               Tips <span className="tag-link-count">(2)</span>
             </a>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );
