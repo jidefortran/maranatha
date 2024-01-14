@@ -25,7 +25,7 @@ const BlogSidebar = () => {
           </form>
         </div>
         {/* Popular posts */}
-        <h3 className="widget-title">Popular posts</h3>
+        <h3 className="widget-title">connection Hub</h3>
         <a href="https://www.instagram.com/maranatha_support/
 "
           target="_blank"
