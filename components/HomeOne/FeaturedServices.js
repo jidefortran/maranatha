@@ -4,9 +4,28 @@ import Link from "next/link";
 const FeaturedServices = () => {
   return (
     <>
+
+
       <div className="featured-services-area">
         <div className="container">
           <div className="row justify-content-center">
+          <div
+                          className="btn-box"
+                          data-aos="fade-up"
+                          data-aos-duration="1200"
+                          data-aos-delay="300"
+                        >
+                          <Link href="/contact" className="btn btn-primary">
+                            Sign Up Now
+                          </Link>
+
+                          <a
+                            href="tel:+61493396991"
+                            className="btn btn-secondary"
+                          >
+                            Call Now 049 3396 991
+                          </a>
+                        </div> 
             <div
               className="col-lg-4 col-md-6 col-sm-6"
               data-aos="fade-in"

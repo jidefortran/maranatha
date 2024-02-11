@@ -2144,9 +2144,9 @@ Main Banner Area CSS
 }
 
 .main-banner {
-  height: 950px;
+  height: 0px;
   position: relative;
-  background-image: url(/images/main-banner.jpg);
+  /* background-image: url(/images/main-banner.jpg); */
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;

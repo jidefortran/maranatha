@@ -1,6 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import moduleName from '../../public/images/mainbanner.jpg'
 
 const PartnerSlider = () => {
   return (
