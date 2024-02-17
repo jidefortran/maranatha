@@ -10996,3 +10996,18 @@ Footer Wrap Area CSS
 }
 
 /*End "Home Demo - 6", "Home Demo - 7" & "Home Demo - 8" Style CSS*/ /*# sourceMappingURL=style.css.map */
+@media screen and (max-width: 1250px) {
+  body {
+  }
+  .smallSize{
+    display:none;
+  
+  }
+  .topClose{
+    margin-top:100px;
+  }
+
+  .whyClose{
+    margin-top:1rem !important;
+  }
+}

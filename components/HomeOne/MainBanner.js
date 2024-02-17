@@ -80,7 +80,7 @@ const MainBanner = () => {
           <div className="">
             <div className="">
               <div className="">
-                <div className="">
+                <div className="topClose">
                   <Zoom {...zoomInProperties}>
                     {images.map((each, index) => (
                       <div
@@ -95,13 +95,14 @@ const MainBanner = () => {
                         />
 
                        
-
+<div className="smallSize">
                         <FeaturedServices />
+                        </div>
                       </div>
                     ))}
                   </Zoom>
                 </div>
-                );
+              
               </div>
             </div>
           </div>

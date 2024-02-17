@@ -7,7 +7,7 @@ const WhyChooseUs = () => {
   return (
     <>
       <div className="why-choose-us-area ">
-        <div className="container" style={{ marginTop: "8rem" , marginBottom:"7rem"}}>
+        <div className="container whyClose" style={{ marginTop: "8rem" , marginBottom:"7rem"}}>
           <div className="row">
             <div className="col-lg-6 col-md-12">
               <div className="why-choose-us-image text-center " style={{alignSelf:"center"}}>
