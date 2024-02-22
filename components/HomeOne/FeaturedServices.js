@@ -20,10 +20,10 @@ const FeaturedServices = () => {
                           </Link>
 
                           <a
-                            href="tel:+61493396991"
+                            href="tel:+61469748947"
                             className="btn btn-secondary"
                           >
-                            Call Now 049 3396 991
+                            Call Now 469 748 947
                           </a>
                         </div> 
             <div
