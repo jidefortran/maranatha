@@ -36,6 +36,7 @@ import "../styles/css/style.css"
 // Global Styles
 import "../styles/style.css";
 import "../styles/responsive.css";
+import "../styles/modern.css";
 
 import Head from "next/head";
 import GoTop from "../components/Shared/GoTop";

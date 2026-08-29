@@ -21,19 +21,25 @@ const roboto_slab = Roboto_Slab({ subsets: ['latin'], display: 'swap' });
 
 export async function getStaticProps({ params }) {
     const postData = await getSinglePost(params.postSlug);
-    // const {comments, commentCount} = await getComments(params.postSlug);
-    const seoData = await getSeo('post', params.postSlug);
 
-    let featuredImageUrl = "https://wp.abhinavr.com/wp-content/uploads/2022/12/travel_icy-polar_022K.jpg";
-
-    if(postData.featuredImage) {
-        featuredImageUrl = postData.featuredImage.node.mediaDetails.sizes[0].sourceUrl;
+    if (!postData) {
+        return { notFound: true };
     }
 
-    if(!postData) {
-        return {
-            notFound: true
-        };
+    // SEO data is optional; the post should still render if WordPress SEO
+    // metadata is unavailable.
+    let seoData = null;
+    try {
+        seoData = await getSeo('post', params.postSlug);
+    } catch (error) {
+        console.error("SEO metadata unavailable:", error);
+    }
+
+    let featuredImageUrl = "/images/placeholder.jpg";
+
+    const sizes = postData?.featuredImage?.node?.mediaDetails?.sizes || [];
+    if (sizes[0]?.sourceUrl) {
+        featuredImageUrl = sizes[0].sourceUrl;
     }
 
     return {
@@ -65,8 +71,6 @@ export async function getStaticPaths() {
 
 export default function Post({ postData, featuredImageUrl, comments, commentCount, seoData }) {
     console.log(comments);
-
-    let jsonSchema = seoData.schema.raw.replace(/https:\/\/wp.abhinavr.com(?!\/wp-content\/uploads)/g, 'https://coolnomad.abhinavr.com/blog')
 
     return (
         <>

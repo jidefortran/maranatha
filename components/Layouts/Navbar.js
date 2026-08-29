@@ -7,7 +7,6 @@ const Navbar = () => {
   // Add active class
   const [currentPath, setCurrentPath] = useState("");
   const router = useRouter();
-  // console.log(router.asPath)
 
   useEffect(() => {
     setCurrentPath(router.asPath);
@@ -17,16 +16,35 @@ const Navbar = () => {
   const toggleNavbar = () => {
     setMenu(!menu);
   };
+
+  // Submenu State for Mobile/Desktop toggle
+  const [isSubmenuOpen, setIsSubmenuOpen] = useState(false);
+  const toggleSubmenu = (e) => {
+    e.preventDefault();
+    setIsSubmenuOpen(!isSubmenuOpen);
+  };
+
+  React.useEffect(() => {
+    const onKeyDown = (event) => {
+      if (event.key === "Escape") setActiveSearchModal(true);
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
+
   React.useEffect(() => {
     let elementId = document.getElementById("navbar");
-    document.addEventListener("scroll", () => {
+    const handleScroll = () => {
+      if (!elementId) return;
       if (window.scrollY > 170) {
         elementId.classList.add("is-sticky");
       } else {
         elementId.classList.remove("is-sticky");
       }
-    });
-  });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const classOne = menu
     ? "collapse navbar-collapse mean-menu"
@@ -36,7 +54,7 @@ const Navbar = () => {
     : "navbar-toggler navbar-toggler-right";
 
   // Search Modal
-  const [isActiveSearchModal, setActiveSearchModal] = useState("false");
+  const [isActiveSearchModal, setActiveSearchModal] = useState(true);
   const handleToggleSearchModal = () => {
     setActiveSearchModal(!isActiveSearchModal);
   };
@@ -47,6 +65,7 @@ const Navbar = () => {
         <div className="main-nav">
           <div className="container-fluid">
             <nav className="navbar navbar-expand-md navbar-light">
+              {/* Original Logos Preserved */}
               <Link href="/" className="navbar-brand">
                 <img
                   src="/images/white-logo.png"
@@ -75,225 +94,33 @@ const Navbar = () => {
                 <span className="icon-bar bottom-bar"></span>
               </button>
 
-              <div className={classOne} id="navbarSupportedContent " style={{visibility:"visible"}}>
+              <div
+                className={classOne}
+                id="navbarSupportedContent"
+                style={{ visibility: "visible" }}
+              >
                 <ul className="navbar-nav">
-                  <li className="nav-item">
-                  
-
-                    {/* <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/"
-                          className={`nav-link ${
-                            currentPath == "/" && "active"
-                          }`}
-                        >
-                          Home Demo - 1
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/index-2/"
-                          className={`nav-link ${
-                            currentPath == "/index-2/" && "active"
-                          }`}
-                        >
-                          Home Demo - 2
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/index-3/"
-                          className={`nav-link ${
-                            currentPath == "/index-3/" && "active"
-                          }`}
-                        >
-                          Home Demo - 3
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/index-4/"
-                          className={`nav-link ${
-                            currentPath == "/index-4/" && "active"
-                          }`}
-                        >
-                          Home Demo - 4
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/index-5/"
-                          className={`nav-link ${
-                            currentPath == "/index-5/" && "active"
-                          }`}
-                        >
-                          Home Demo - 5
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/index-6/"
-                          className={`nav-link ${
-                            currentPath == "/index-6/" && "active"
-                          }`}
-                        >
-                          Home Demo - 6
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/index-7/"
-                          className={`nav-link ${
-                            currentPath == "/index-7/" && "active"
-                          }`}
-                        >
-                          Home Demo - 7
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/index-8/"
-                          className={`nav-link ${
-                            currentPath == "/index-8/" && "active"
-                          }`}
-                        >
-                          Home Demo - 8
-                        </Link>
-                      </li>
-                    </ul> */}
-                  </li>
-
-                  {/* <li className="nav-item">
-                    <Link
-                      href="#"
-                      className="nav-link"
-                      onClick={(e) => e.preventDefault()}
-                    >
-                      Pages <i className="fas fa-chevron-down"></i>
-                    </Link>
-
-                    <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/about/"
-                          className={`nav-link ${
-                            currentPath == "/about/" && "active"
-                          }`}
-                        >
-                          About Us
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/about-two/"
-                          className={`nav-link ${
-                            currentPath == "/about-two/" && "active"
-                          }`}
-                        >
-                          About Us Two
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/team/"
-                          className={`nav-link ${
-                            currentPath == "/team/" && "active"
-                          }`}
-                        >
-                          Team
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/pricing/"
-                          className={`nav-link ${
-                            currentPath == "/pricing/" && "active"
-                          }`}
-                        >
-                          Pricing
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/feedback/"
-                          className={`nav-link ${
-                            currentPath == "/feedback/" && "active"
-                          }`}
-                        >
-                          Feedback
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/partner/"
-                          className={`nav-link ${
-                            currentPath == "/partner/" && "active"
-                          }`}
-                        >
-                          Partner
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/faq/"
-                          className={`nav-link ${
-                            currentPath == "/faq/" && "active"
-                          }`}
-                        >
-                          Faq
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/coming-soon/"
-                          className={`nav-link ${
-                            currentPath == "/coming-soon/" && "active"
-                          }`}
-                        >
-                          Coming Soon
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link href="/404/">404 Error</Link>
-                      </li>
-                    </ul>
-                  </li> */}
-
+                  {/* Services Parent Dropdown */}
                   <li className="nav-item">
                     <Link
-                      href="/#/"
+                      href="/services/"
                       className={`nav-link ${
-                        currentPath == "/services/" && "active"
+                        currentPath === "/services/" ? "active" : ""
                       }`}
                     >
                       Services <i className="fas fa-chevron-down"></i>
                     </Link>
 
                     <ul className="dropdown-menu">
+                      {/* Core Services */}
                       <li className="nav-item">
                         <Link
                           href="/mental-health/"
                           className={`nav-link ${
-                            currentPath == "/mental-health/" && "active"
+                            currentPath === "/mental-health/" ? "active" : ""
                           }`}
                         >
-                         Mental Health Support
+                          Mental Health Support
                         </Link>
                       </li>
 
@@ -301,10 +128,12 @@ const Navbar = () => {
                         <Link
                           href="/supported-independent-living/"
                           className={`nav-link ${
-                            currentPath == "/supported-independent-living/" && "active"
+                            currentPath === "/supported-independent-living/"
+                              ? "active"
+                              : ""
                           }`}
                         >
-                         Supported Independent Living
+                          Supported Independent Living
                         </Link>
                       </li>
 
@@ -312,7 +141,9 @@ const Navbar = () => {
                         <Link
                           href="/respite-accommodation/"
                           className={`nav-link ${
-                            currentPath == "/respite-accommodation/" && "active"
+                            currentPath === "/respite-accommodation/"
+                              ? "active"
+                              : ""
                           }`}
                         >
                           Respite/Short Stay Accommodation
@@ -323,7 +154,9 @@ const Navbar = () => {
                         <Link
                           href="/community-participation/"
                           className={`nav-link ${
-                            currentPath == "/community-participation/" && "active"
+                            currentPath === "/community-participation/"
+                              ? "active"
+                              : ""
                           }`}
                         >
                           Community Participation
@@ -334,136 +167,141 @@ const Navbar = () => {
                         <Link
                           href="/psycho-social-recovery/"
                           className={`nav-link ${
-                            currentPath == "/psycho-social-recovery/" && "active"
+                            currentPath === "/psycho-social-recovery/"
+                              ? "active"
+                              : ""
                           }`}
                         >
                           Psycho-Social Recovery
                         </Link>
                       </li>
+
                       <li className="nav-item">
                         <Link
                           href="/support-daily-task/"
                           className={`nav-link ${
-                            currentPath == "/support-daily-task/" && "active"
+                            currentPath === "/support-daily-task/"
+                              ? "active"
+                              : ""
                           }`}
                         >
                           Support with Daily Tasks
                         </Link>
                       </li>
+
+                      {/* Divider */}
+                      <li className="dropdown-divider"></li>
+
+                      {/* Nested Submenu: Additional Services */}
+                      <li className={`nav-item dropdown-submenu ${isSubmenuOpen ? 'show' : ''}`}>
+                        <a
+                          href="#"
+                          className="nav-link dropdown-toggle d-flex align-items-center justify-content-between"
+                          onClick={toggleSubmenu}
+                        >
+                          <span>
+                            Additional Services
+                            <span className="badge bg-primary ms-2" style={{ fontSize: '10px' }}>
+                              Specialized
+                            </span>
+                          </span>
+                          <i className={`fas ${isSubmenuOpen ? 'fa-chevron-down' : 'fa-chevron-right'} ms-2`}></i>
+                        </a>
+
+                        <ul className={`dropdown-menu ${isSubmenuOpen ? 'show' : ''}`}>
+                          <li className="nav-item">
+                            <Link
+                              href="/drug-and-alcohol-support/"
+                              className={`nav-link ${
+                                currentPath === "/drug-and-alcohol-support/" ? "active" : ""
+                              }`}
+                            >
+                              Drug & Alcohol
+                            </Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link
+                              href="/counselling/"
+                              className={`nav-link ${
+                                currentPath === "/counselling/" ? "active" : ""
+                              }`}
+                            >
+                              Counselling
+                            </Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link
+                              href="/homelessness-support/"
+                              className={`nav-link ${
+                                currentPath === "/homelessness-support/" ? "active" : ""
+                              }`}
+                            >
+                              Homelessness Support
+                            </Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link
+                              href="/domestic-violence-support/"
+                              className={`nav-link ${
+                                currentPath === "/domestic-violence-support/" ? "active" : ""
+                              }`}
+                            >
+                              Domestic Violence Support
+                            </Link>
+                          </li>
+                          <li className="nav-item">
+                            <Link
+                              href="/youth-services/"
+                              className={`nav-link ${
+                                currentPath === "/youth-services/" ? "active" : ""
+                              }`}
+                            >
+                              Youth Services
+                            </Link>
+                          </li>
+                        </ul>
+                      </li>
                     </ul>
                   </li>
 
+                  {/* About Us */}
                   <li className="nav-item">
-                  <Link
-                          href="/about/"
-                          className={`nav-link ${
-                            currentPath == "/about/" && "active"
-                          }`}
-                        >
-                          About Us
-                        </Link>
-
-                    {/* <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/projects/"
-                          className={`nav-link ${
-                            currentPath == "/projects/" && "active"
-                          }`}
-                        >
-                          Projects
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/projects-details/"
-                          className={`nav-link ${
-                            currentPath == "/projects-details/" && "active"
-                          }`}
-                        >
-                          Projects Details
-                        </Link>
-                      </li>
-                    </ul> */}
+                    <Link
+                      href="/about/"
+                      className={`nav-link ${
+                        currentPath === "/about/" ? "active" : ""
+                      }`}
+                    >
+                      About Us
+                    </Link>
                   </li>
 
-          
-
+                  {/* Blog */}
                   <li className="nav-item">
                     <Link
                       href="/blog/"
                       className={`nav-link ${
-                        currentPath == "/blog/" && "active"
+                        currentPath === "/blog/" ? "active" : ""
                       }`}
                     >
-                      Blog 
+                      Blog
                     </Link>
-
-                    {/* <ul className="dropdown-menu">
-                      <li className="nav-item">
-                        <Link
-                          href="/blog/"
-                          className={`nav-link ${
-                            currentPath == "/blog/" && "active"
-                          }`}
-                        >
-                          Blog Grid
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/blog2/"
-                          className={`nav-link ${
-                            currentPath == "/blog2/" && "active"
-                          }`}
-                        >
-                          Blog Right Sidebar
-                        </Link>
-                      </li>
-
-                      <li className="nav-item">
-                        <Link
-                          href="/blog-details/"
-                          className={`nav-link ${
-                            currentPath == "/blog-details/" && "active"
-                          }`}
-                        >
-                          Blog Details
-                        </Link>
-                      </li>
-                    </ul> */}
                   </li>
-
-                  {/* <li className="nav-item">
-                    <Link
-                      href="/contact/"
-                      className={`nav-link ${
-                        currentPath == "/contact/" && "active"
-                      }`}
-                    >
-                      Contact
-                    </Link>
-                  </li> */}
                 </ul>
-                
-                {/* others-options */}
-                <div className="others-options">
-                  {/* <Link href="/cart" className="cart-btn">
-                    <i className="flaticon-commerce-and-shopping"></i>
-                    <span>1</span>
-                  </Link> */}
 
+                {/* Right Options */}
+                <div className="others-options">
                   <div className="option-item">
-                    <i
-                      className="search-btn flaticon-search"
+                    <button
+                      type="button"
+                      className="search-btn flaticon-search border-0 bg-transparent p-0"
                       onClick={handleToggleSearchModal}
-                    ></i>
+                      aria-label="Open site search"
+                    ></button>
                   </div>
 
                   <Link href="/contact-us" className="btn btn-primary">
-                   Contact Us
+                    Contact Us
                   </Link>
                 </div>
               </div>
@@ -472,7 +310,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Search Form */}
+      {/* Search Form Modal */}
       <div
         className={`search-overlay ${
           isActiveSearchModal ? "" : "search-overlay-active"
@@ -493,21 +331,33 @@ const Navbar = () => {
             </div>
 
             <div className="search-overlay-form">
-              <form>
+              <form
+                onSubmit={(e) => {
+                  e.preventDefault();
+                  const value = e.currentTarget.elements.search.value.trim();
+                  router.push(value ? `/search/?q=${encodeURIComponent(value)}` : "/search/");
+                  setActiveSearchModal(true);
+                }}
+              >
+                <label htmlFor="navbar-search" className="sr-only">
+                  Search the site
+                </label>
                 <input
-                  type="text"
+                  id="navbar-search"
+                  name="search"
+                  type="search"
                   className="input-search"
                   placeholder="Search here..."
+                  autoComplete="off"
                 />
-                <button type="submit">
-                  <i className="fa fa-search"></i>
+                <button type="submit" aria-label="Submit search">
+                  <i className="fa fa-search" aria-hidden="true"></i>
                 </button>
               </form>
             </div>
           </div>
         </div>
       </div>
-      {/* End Search Form */}
     </>
   );
 };

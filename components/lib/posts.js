@@ -49,9 +49,8 @@ export async function getPostList(endCursor = null, taxonomy = null) {
     };
 
     const resJson = await graphqlRequest(query);
-    const allPosts = resJson.data.posts;
-
-    return allPosts;
+    if (resJson.errors) throw new Error("Unable to load posts");
+    return resJson?.data?.posts || { nodes: [], pageInfo: {} };
 }
 
 export async function getSinglePost(slug) {
@@ -87,9 +86,8 @@ export async function getSinglePost(slug) {
     };
 
     const resJson = await graphqlRequest(query);
-    const singlePost = resJson.data.post;
-
-    return singlePost;
+    if (resJson.errors) throw new Error("Unable to load post");
+    return resJson?.data?.post || null;
 }
 
 export async function getPostSlugs() {
@@ -104,8 +102,8 @@ export async function getPostSlugs() {
     };
 
     const resJson = await graphqlRequest(query);
-    const slugs = resJson.data.posts.nodes;
-    return slugs;
+    if (resJson.errors) throw new Error("Unable to load post slugs");
+    return resJson?.data?.posts?.nodes || [];
 }
 
 export async function getCategorySlugs() {
@@ -120,9 +118,8 @@ export async function getCategorySlugs() {
   };
 
   const resJson = await graphqlRequest(query);
-  const categories = resJson.data.categories.nodes;
-
-  return categories;
+  if (resJson.errors) throw new Error("Unable to load categories");
+  return resJson?.data?.categories?.nodes || [];
 }
 
 export async function getCategoryDetails(categoryName) {
@@ -137,7 +134,6 @@ export async function getCategoryDetails(categoryName) {
   };
 
   const resJson = await graphqlRequest(query);
-  const categoryDetails = resJson.data.category;
-
-  return categoryDetails;
+  if (resJson.errors) throw new Error("Unable to load category");
+  return resJson?.data?.category || null;
 }
