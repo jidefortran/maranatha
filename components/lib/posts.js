@@ -48,9 +48,20 @@ export async function getPostList(endCursor = null, taxonomy = null) {
           }`
     };
 
-    const resJson = await graphqlRequest(query);
-    if (resJson.errors) throw new Error("Unable to load posts");
-    return resJson?.data?.posts || { nodes: [], pageInfo: {} };
+    // Used directly in getStaticProps for the static /blog index page
+    // (no fallback/revalidate), so a backend hiccup here must not throw
+    // or it takes down the whole build. Return an empty result instead.
+    try {
+        const resJson = await graphqlRequest(query);
+        if (resJson.errors) {
+            console.error("getPostList: GraphQL returned errors", resJson.errors);
+            return { nodes: [], pageInfo: {} };
+        }
+        return resJson?.data?.posts || { nodes: [], pageInfo: {} };
+    } catch (error) {
+        console.error("getPostList: failed to reach WordPress backend", error);
+        return { nodes: [], pageInfo: {} };
+    }
 }
 
 export async function getSinglePost(slug) {
