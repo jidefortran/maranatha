@@ -101,9 +101,22 @@ export async function getPostSlugs() {
           }`
     };
 
-    const resJson = await graphqlRequest(query);
-    if (resJson.errors) throw new Error("Unable to load post slugs");
-    return resJson?.data?.posts?.nodes || [];
+    // Used in getStaticPaths — must never throw, or the entire build fails.
+    // If the WordPress backend is temporarily unreachable (network error,
+    // cert issue, timeout, etc.), fall back to an empty path list. Pages
+    // will still be generated on-demand at request time via
+    // `fallback: 'blocking'`.
+    try {
+        const resJson = await graphqlRequest(query);
+        if (resJson.errors) {
+            console.error("getPostSlugs: GraphQL returned errors", resJson.errors);
+            return [];
+        }
+        return resJson?.data?.posts?.nodes || [];
+    } catch (error) {
+        console.error("getPostSlugs: failed to reach WordPress backend, skipping build-time paths", error);
+        return [];
+    }
 }
 
 export async function getCategorySlugs() {
@@ -117,9 +130,18 @@ export async function getCategorySlugs() {
     }`
   };
 
-  const resJson = await graphqlRequest(query);
-  if (resJson.errors) throw new Error("Unable to load categories");
-  return resJson?.data?.categories?.nodes || [];
+  // Also used in a getStaticPaths — same reasoning as getPostSlugs above.
+  try {
+    const resJson = await graphqlRequest(query);
+    if (resJson.errors) {
+      console.error("getCategorySlugs: GraphQL returned errors", resJson.errors);
+      return [];
+    }
+    return resJson?.data?.categories?.nodes || [];
+  } catch (error) {
+    console.error("getCategorySlugs: failed to reach WordPress backend, skipping build-time paths", error);
+    return [];
+  }
 }
 
 export async function getCategoryDetails(categoryName) {
