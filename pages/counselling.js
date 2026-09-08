@@ -1,1 +1,2 @@
-export { default } from "./gemini-code-1788033859913";
+import ServicePage from '../components/Services/ServicePage';
+export default function counselling() { return <ServicePage slug="counselling" />; }

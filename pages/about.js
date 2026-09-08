@@ -1,17 +1,23 @@
-import React, { Component } from "react";
+import React from "react";
+import Head from "next/head";
 import Navbar from "../components/Layouts/Navbar";
 import Footer from "../components/Layouts/Footer";
 import PageBanner from "../components/Common/PageBanner";
 import AboutContact from "../components/About/AboutContent";
-import Services from "../components/HomeTwo/Services";
+import OurStory from "../components/About/OurStory";
+import HomeServices from "../components/HomeOne/Services";
 import Team from "../components/Common/Team";
-import PartnerContent from "../components/Common/PartnerContent";
-import FeedbackSlider from "../components/Common/FeedbackSlider";
-
 
 const About = () => {
   return (
     <>
+      <Head>
+        <title>About Us | Maranatha Wellbeing Support WA</title>
+        <meta
+          name="description"
+          content="Maranatha Wellbeing Support WA provides practical, person-centred support for people living with disability and mental health coexisting challenges across Western Australia."
+        />
+      </Head>
       <Navbar />
 
       <PageBanner
@@ -24,9 +30,11 @@ const About = () => {
 
       <AboutContact />
 
-      <Services />
+      <OurStory />
 
       <Team />
+
+      <HomeServices />
 
       <Footer />
     </>

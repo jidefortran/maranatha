@@ -1,5 +1,8 @@
-export async function getServerSideProps() {
-  return { redirect: { destination: "/services/", permanent: false } };
-}
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-export default function ServiceDetailsRedirect() { return null; }
+export default function LegacyServiceDetails() {
+  const router = useRouter();
+  useEffect(() => { router.replace('/services/'); }, [router]);
+  return null;
+}

@@ -34,7 +34,7 @@ const ContactFormContent = () => {
             <div className="contact-info-content">
               <h3>Contact us by Phone Number or Email Address</h3>
               <h2>
-                <span className="number">049 3396 991</span>
+                <span className="number">0493 396 991</span>
                 <span className="or">OR</span>
                 <span className="email">info@maranathagroup.com.au</span>
               </h2>
@@ -42,36 +42,18 @@ const ContactFormContent = () => {
               <ul className="social">
                 <li>
                   <a
-                    href="https://twitter.com/"
+                    href="https://www.facebook.com/maranathasupport/"
                     target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-twitter"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-youtube"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-facebook-f"></i>
                   </a>
                 </li>
                 <li>
                   <a
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/company/maranatha-wellbeing-support/"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-linkedin-in"></i>
                   </a>
@@ -80,7 +62,7 @@ const ContactFormContent = () => {
                   <a
                     href="https://www.instagram.com/maranatha_support"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     <i className="fab fa-instagram"></i>
                   </a>

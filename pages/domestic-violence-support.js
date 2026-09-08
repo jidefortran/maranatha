@@ -1,1 +1,2 @@
-export { default } from "./gemini-code-1788033868577";
+import ServicePage from '../components/Services/ServicePage';
+export default function domestic_violence_support() { return <ServicePage slug="domestic-violence-support" />; }

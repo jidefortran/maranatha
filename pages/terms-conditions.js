@@ -1,5 +1,5 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from "react";
+import Head from "next/head";
 import Navbar from "../components/Layouts/Navbar";
 import PageBanner from "../components/Common/PageBanner";
 import Footer from "../components/Layouts/Footer";
@@ -7,6 +7,13 @@ import Footer from "../components/Layouts/Footer";
 const TermsConditions = () => {
   return (
     <>
+      <Head>
+        <title>Terms &amp; Conditions | Maranatha Wellbeing Support WA</title>
+        <meta
+          name="description"
+          content="Terms and conditions for using the Maranatha Wellbeing Support WA website."
+        />
+      </Head>
       <Navbar />
 
       <PageBanner
@@ -16,95 +23,67 @@ const TermsConditions = () => {
         activePageText="Terms & Conditions"
       />
 
-      <div className="text-container ptb-110">
+      <div className="mar-legal-page">
         <div className="container">
-          <h4>What is Lorem Ipsum?</h4>
+          <p className="mar-legal-updated">Last updated: September 2026</p>
 
+          <h4>About this website</h4>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry. Lorem Ipsum has been the industry standard dummy text
-            ever since the 1500s, when an unknown printer took a galley of type
-            and scrambled it to make a type specimen book. It has survived not
-            only five centuries, but also the leap into electronic typesetting,
-            remaining essentially unchanged. It was popularised in the 1960s
-            with the release of Letraset sheets containing Lorem Ipsum passages,
-            and more recently with desktop publishing software like Aldus
-            PageMaker including versions of Lorem Ipsum.
+            This website is operated by Maranatha Wellbeing Support WA
+            ("Maranatha", "we", "us"). By using this website, you agree to
+            these terms and conditions.
           </p>
 
-          <h4>Where does it come from?</h4>
+          <h4>Not a substitute for professional or emergency services</h4>
           <p>
-            Contrary to popular belief, Lorem Ipsum is not simply random text.
-            It has roots in a piece of classical Latin literature from 45 BC,
-            making it over 2000 years old. Richard McClintock, a Latin professor
-            at Hampden-Sydney College in Virginia, looked up one of the more
-            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
-            going through the cites of the word in classical literature,
-            discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
-            of Good and Evil) by Cicero, written in 45 BC. This book is a
-            treatise on the theory of ethics, very popular during the
-            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
-            amet..".
+            Information on this website is general in nature and does not
+            replace medical, clinical, legal or professional advice. It does
+            not replace emergency services. If you are in immediate danger,
+            call 000.
           </p>
 
+          <h4>Accuracy of information</h4>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
-            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
-            sed quia non numquam eius modi tempora incidunt ut labore et dolore
-            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
-            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
-            aliquid ex ea commodi consequatur? Quis autem vel eum iure
-            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
-            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            We take reasonable care to keep information on this website
+            accurate and up to date, but we do not guarantee that all
+            content is complete, current or error-free. Details about our
+            services may change; please contact us to confirm current
+            information relevant to your circumstances.
           </p>
 
-          <h4>Where can I get some?</h4>
+          <h4>External links</h4>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim.
+            This website may link to third-party websites and services for
+            your convenience. We are not responsible for the content or
+            privacy practices of those external sites.
           </p>
 
+          <h4>Intellectual property</h4>
           <p>
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour, or randomised words which don't look even slightly
-            believable. If you are going to use a passage of Lorem Ipsum, you
-            need to be sure there isn't anything embarrassing hidden in the
-            middle of text. All the Lorem Ipsum generators on the Internet tend
-            to repeat predefined chunks as necessary, making this the first true
-            generator on the Internet. It uses a dictionary of over 200 Latin
-            words, combined with a handful of model sentence structures, to
-            generate Lorem Ipsum which looks reasonable. The generated Lorem
-            Ipsum is therefore always free from repetition, injected.
+            The content on this website, including text, images and design,
+            is owned by or licensed to Maranatha Wellbeing Support WA and
+            may not be reproduced without permission.
           </p>
 
+          <h4>Limitation of liability</h4>
           <p>
-            But I must explain to you how all this mistaken idea of denouncing
-            pleasure and praising pain was born and I will give you a complete
-            account of the system, and expound the actual teachings of the great
-            explorer of the truth, the master-builder of human happiness. No one
-            rejects, dislikes, or avoids pleasure itself, because it is
-            pleasure, but because those who do not know how to pursue pleasure
-            rationally encounter consequences that are extremely painful. Nor
-            again is there anyone who loves or pursues or desires to obtain pain
-            of itself, because it is pain, but because occasionally
-            circumstances occur in which toil and pain can procure him some
-            great pleasure. To take a trivial example, which of us ever
-            undertakes laborious physical exercise, except to obtain some
-            advantage from it? But who has any right to find fault with a man
-            who chooses to enjoy a pleasure that has no annoying consequences,
-            or one who avoids a pain that produces no resultant pleasure?
+            To the extent permitted by law, Maranatha is not liable for any
+            loss or damage arising from your use of this website.
+          </p>
+
+          <h4>Governing law</h4>
+          <p>
+            These terms are governed by the laws of Western Australia,
+            Australia.
+          </p>
+
+          <h4>Contact us</h4>
+          <p>
+            Email: info@maranathagroup.com.au
+            <br />
+            Phone: 0493 396 991
+            <br />
+            Address: 126 Grand Boulevard, Joondalup WA 6021
           </p>
         </div>
       </div>

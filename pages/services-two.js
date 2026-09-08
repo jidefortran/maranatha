@@ -1,27 +1,8 @@
-import React from "react";
-import Navbar from "../components/Layouts/Navbar";
-import PageBanner from "../components/Common/PageBanner";
-import Services from "../components/HomeTwo/Services";
-import Footer from "../components/Layouts/Footer";
+import { useEffect } from 'react';
+import { useRouter } from 'next/router';
 
-const ServicesTwo = () => {
-  return (
-    <>
-      <Navbar />
-
-      <PageBanner
-        pageTitle="Services Two"
-        homePageUrl="/"
-        homePageText="Home"
-        activePageText="Services Two"
-        bgImgClass="item-bg2"
-      />
-
-      <Services />
-
-      <Footer />
-    </>
-  );
-};
-
-export default ServicesTwo;
+export default function LegacyServices() {
+  const router = useRouter();
+  useEffect(() => { router.replace('/services/'); }, [router]);
+  return null;
+}

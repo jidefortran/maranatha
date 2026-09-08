@@ -27,7 +27,7 @@ const Footer = () => {
 
                 <ul className="social">
                   <li>
-                    <a href="https://www.facebook.com/maranathasupport/" target="_blank">
+                    <a href="https://www.facebook.com/maranathasupport/" target="_blank" rel="noopener noreferrer">
                       <i className="flaticon-facebook-letter-logo"></i>
                     </a>
                   </li>
@@ -37,13 +37,13 @@ const Footer = () => {
                     </a>
                   </li> */}
                   <li>
-                    <a href="https://www.instagram.com/maranatha_support/" target="_blank">
+                    <a href="https://www.instagram.com/maranatha_support/" target="_blank" rel="noopener noreferrer">
                       <i className="flaticon-instagram-logo"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.linkedin.com/company/maranatha-wellbeing-support/" target="_blank">
-                      <i className="flaticon-youtube-play-button"></i> 
+                    <a href="https://www.linkedin.com/company/maranatha-wellbeing-support/" target="_blank" rel="noopener noreferrer">
+                      <i className="fab fa-linkedin-in"></i>
                     </a>
                   </li>
                 </ul>
@@ -60,24 +60,21 @@ const Footer = () => {
                 <h3>Services</h3>
 
                 <ul className="footer-services-list">
-                  <li>
-                    <Link href="/mental-health">Mental Health Support</Link>
-                  </li>
-                  <li>
-                    <Link href="/supported-independent-living"> Supported Independent Living</Link>
-                  </li>
-                  <li>
-                    <Link href="/psycho-social-recovery">Psycho-Social Recovery/Support Coordination</Link>
-                  </li>
-                  <li>
-                    <Link href="/community-participation">Community Participation</Link>
-                  </li>
-                  <li>
-                    <Link href="/respite-accommodation">Respite/Short Stay Accommodation</Link>
-                  </li>
-                  <li>
-                    <Link href="/support-daily-task">Support with Daily Tasks</Link>
-                  </li>
+                  {[
+                    ['mental-health', 'Mental Health Support'],
+                    ['supported-independent-living', 'Supported Independent Living'],
+                    ['respite-accommodation', 'Respite & Short Stay'],
+                    ['community-participation', 'Community Participation'],
+                    ['psycho-social-recovery', 'Psychosocial Recovery'],
+                    ['support-daily-task', 'Daily Living Support'],
+                    ['drug-and-alcohol-support', 'Drug & Alcohol Support'],
+                    ['counselling', 'Counselling'],
+                    ['homelessness-support', 'Homelessness Support'],
+                    ['domestic-violence-support', 'Domestic Violence Support'],
+                    ['youth-services', 'Youth Services'],
+                  ].map(([slug, label]) => (
+                    <li key={slug}><Link href={`/${slug}/`}>{label}</Link></li>
+                  ))}
                 </ul>
               </div>
             </div>
@@ -126,7 +123,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <span>Phone:</span>
-                    +61 469 748 947
+                    0493 396 991
                   </li>
                  
                 </ul>
@@ -140,11 +137,7 @@ const Footer = () => {
             <div className="row align-items-center">
               <div className="col-lg-6 col-md-6 col-sm-6">
                 <p>
-                  Copyright &copy;{currentYear} Maranatha Group. All Rights Reserved{" "}
-                  <a href="https://maranathagroup.com.au/" target="_blank">
-                    
-                  </a>
-                  .
+                  Copyright &copy;{currentYear} Maranatha Group. All Rights Reserved.
                 </p>
               </div>
 

@@ -20,10 +20,10 @@ const FeaturedServices = () => {
                           </Link>
 
                           <a
-                            href="tel:+61469748947"
+                            href="tel:+61493396991"
                             className="btn btn-secondary"
                           >
-                            Call Now 469 748 947
+                            Call Now 0493 396 991
                           </a>
                         </div> 
             <div
@@ -37,11 +37,7 @@ const FeaturedServices = () => {
                   <i className="fa-regular fa-face-smile"/>
                 </div>
 
-                <h3>
-                  <Link href="#">
-                    Solutions
-                  </Link>
-                </h3>
+                <h3>Solutions</h3>
                 <p>
                   Together, we are not just overcoming challenges; we are
                   crafting success stories, one day at a time.
@@ -60,9 +56,7 @@ const FeaturedServices = () => {
                   <i className="fa-solid fa-heart"></i>
                 </div>
 
-                <h3>
-                  <Link href="#">Value</Link>
-                </h3>
+                <h3>Value</h3>
                 <p>
                   Our commitment isn&apos;t just to be a service; it is to be your
                   partner in navigating the tapestry of life. In Australia,
@@ -84,9 +78,7 @@ const FeaturedServices = () => {
                  
                 </div>
 
-                <h3>
-                  <Link href="#">Connection</Link>
-                </h3>
+                <h3>Connection</h3>
                 <p>
                 Journey with us to a sanctuary of support, empowerment, and genuine connection.
                 </p>

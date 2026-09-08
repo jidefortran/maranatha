@@ -1,115 +1,29 @@
-import React from "react";
-import Link from "next/link";
-import FeaturedServices from "./FeaturedServices";
+import React from 'react';
+import Link from 'next/link';
 
-//These are Third party packages for smooth slideshow
-import { Zoom } from "react-slideshow-image";
-import "react-slideshow-image/dist/styles.css";
-const MainBanner = () => {
-  const images = [
-    "./images/7.jpg",
-    "/images/3.jpg",
-    "./images/mainbanner2.jpg",
-    "/images/4.jpg",
-    "/images/5.jpg",
-    "/images/6.jpg",
-  ];
-
-  //These are custom properties for zoom effect while slide-show
-  const zoomInProperties = {
-    indicators: true,
-    scale: 1.2,
-    duration: 5000,
-    transitionDuration: 500,
-    infinite: true,
-    prevArrow: (
-      <div style={{ width: "30px", marginRight: "-30px", cursor: "pointer" }}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          fill="#2e2e2e"
-        >
-          <path d="M242 180.6v-138L0 256l242 213.4V331.2h270V180.6z" />
-        </svg>
-      </div>
-    ),
-    nextArrow: (
-      <div style={{ width: "30px", marginLeft: "-30px", cursor: "pointer" }}>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          fill="#2e2e2e"
-        >
-          <path d="M512 256L270 42.6v138.2H0v150.6h270v138z" />
-        </svg>
-      </div>
-    ),
-  };
+export default function MainBanner() {
   return (
-    <>
-      <div className="">
-        <div className="">
-          <div className="">
-            <div className="">
-              <div className="">
-                {/* <h1
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="100"
-                  style={{color:'white'}}
-                >
-                  NDIS Specialist Support Coordination
-                </h1> */}
-
-                {/* <p className="lead"
-                  data-aos="fade-up"
-                  data-aos-duration="1200"
-                  data-aos-delay="200"
-                  style={{fontSize:'x-large'}}
-                 
-                >
-             
-                  NDIS Support Coordination is a service the NDIS provides to participants to build their ability  to link with the informal community funded support enabling them get the best out of their NDIS plan
-                </p> */}
-              </div>
-            </div>
+    <section className="m26-hero">
+      <div className="m26-hero-glow m26-glow-a" />
+      <div className="m26-hero-glow m26-glow-b" />
+      <div className="container m26-hero-grid">
+        <div className="m26-hero-copy">
+          <div className="m26-kicker"><span /> Wellbeing • Disability • Community</div>
+          <h1>Support that helps you <em>live your life.</em></h1>
+          <p>Practical, person-centred support for people living with disability, mental health and changing life circumstances across Western Australia.</p>
+          <div className="m26-actions">
+            <Link href="/contact" className="m26-btn m26-btn-dark">Start a conversation <span>↗</span></Link>
+            <Link href="/services" className="m26-btn m26-btn-quiet">Explore services</Link>
           </div>
+          <div className="m26-trust-row"><span>NDIS-focused support</span><i /> <span>Person-centred</span><i /> <span>Real-world goals</span></div>
         </div>
-
-        <div className="">
-          <div className="">
-            <div className="">
-              <div className="">
-                <div className="topClose">
-                  <Zoom {...zoomInProperties}>
-                    {images.map((each, index) => (
-                      <div
-                        key={index}
-                        className="flex justify-center w-full h-full flex-col"
-                      >
-
-
-                        <img
-                          className="w-4/4 object-cover rounded-lg shadow-xl"
-                          src={each}
-                        />
-
-                       
-<div className="smallSize">
-                        <FeaturedServices />
-                        </div>
-                      </div>
-                    ))}
-                  </Zoom>
-                </div>
-              
-              </div>
-            </div>
-          </div>
+        <div className="m26-hero-visual">
+          <div className="m26-image-frame"><img src="/images/services-details/service-details1.jpg" alt="A person taking a calm, mindful moment" /></div>
+          <div className="m26-floating-card"><strong>Support, your way.</strong><span>Small steps. Practical help. More independence.</span></div>
+          <div className="m26-hero-number"><b>01</b><span>Care<br/>with purpose</span></div>
         </div>
       </div>
-    </>
+      <div className="m26-scroll">Scroll to explore <span>↓</span></div>
+    </section>
   );
-};
-
-export default MainBanner;
+}
