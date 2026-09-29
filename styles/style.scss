@@ -1,0 +1,392 @@
+/* =========================================================
+   1. Color Palette & Root Variables
+   ========================================================= */
+:root {
+  --brand-primary: #0284c7;
+  --brand-primary-hover: #0369a1;
+  --brand-light: #f0f9ff;
+  --badge-bg: #e0f2fe;
+  --text-main: #334155;
+  --text-muted: #64748b;
+  --border-color: rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================================
+   2. Navbar & Submenu Dropdown Styling
+   ========================================================= */
+.navbar-nav .dropdown-menu {
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 8px 0;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.98);
+}
+
+.navbar-nav .dropdown-menu .nav-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 18px;
+  font-weight: 500;
+  color: var(--text-main);
+  border-radius: 8px;
+  margin: 2px 8px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.navbar-nav .dropdown-menu .nav-link:hover {
+  background-color: var(--brand-light);
+  color: var(--brand-primary);
+  transform: translateX(4px);
+}
+
+.dropdown-divider {
+  border-top: 1px solid #f1f5f9;
+  margin: 6px 0;
+}
+
+.badge.bg-light-primary {
+  background-color: var(--badge-bg);
+  color: var(--brand-primary-hover);
+  font-size: 11px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Submenu Desktop Flyout Animation */
+@media (min-width: 992px) {
+  .dropdown-submenu {
+    position: relative;
+  }
+
+  .dropdown-submenu > .submenu-flyout {
+    top: -8px;
+    left: 100%;
+    margin-left: 6px;
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(8px) scale(0.98);
+    transition: opacity 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+                transform 0.22s cubic-bezier(0.16, 1, 0.3, 1),
+                visibility 0.22s;
+  }
+
+  .dropdown-submenu:hover > .submenu-flyout {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Submenu Mobile Inline Accordion */
+@media (max-width: 991px) {
+  .submenu-flyout {
+    display: none;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    padding-left: 12px;
+  }
+
+  .submenu-flyout.show-mobile {
+    display: block;
+    animation: fadeIn 0.25s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-4px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}
+
+/* =========================================================
+   3. Page Title & Hero Banner Styling
+   ========================================================= */
+.page-title-area {
+  position: relative;
+  padding-top: 120px;
+  padding-bottom: 90px;
+  background-color: #0f172a;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+.page-title-area::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(15, 23, 42, 0.75);
+  z-index: 1;
+}
+
+.page-title-content {
+  position: relative;
+  z-index: 2;
+}
+
+.page-title-content h2 {
+  color: #ffffff;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.page-title-content ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.page-title-content ul li {
+  display: inline-block;
+  color: #94a3b8;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0 5px;
+}
+
+.page-title-content ul li a {
+  color: #e2e8f0;
+  transition: color 0.2s ease;
+}
+
+.page-title-content ul li a:hover {
+  color: var(--brand-primary);
+}
+
+.page-title-content ul li::after {
+  content: "/";
+  margin-left: 10px;
+  color: #64748b;
+}
+
+.page-title-content ul li:last-child::after {
+  content: "";
+}
+
+/* Page background variations */
+.page-title-area.bg-1 { background-image: url('/images/page-banner-1.jpg'); }
+.page-title-area.bg-2 { background-image: url('/images/page-banner-2.jpg'); }
+.page-title-area.bg-3 { background-image: url('/images/page-banner-3.jpg'); }
+.page-title-area.bg-4 { background-image: url('/images/page-banner-4.jpg'); }
+.page-title-area.bg-5 { background-image: url('/images/page-banner-5.jpg'); }
+
+/* =========================================================
+   4. Service Details & Feature Bullet List
+   ========================================================= */
+.ptb-100 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.service-details-desc h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 18px;
+}
+
+.service-details-desc p {
+  color: #475569;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.description-list {
+  padding: 0;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.description-list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: #334155;
+  font-weight: 500;
+}
+
+.description-list li i {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  font-size: 20px;
+  color: var(--brand-primary);
+}
+
+/* =========================================================
+   5. Service Sidebar Menu
+   ========================================================= */
+.service-sidebar {
+  padding-left: 15px;
+}
+
+.sidebar-widget {
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  margin-bottom: 30px;
+}
+
+.sidebar-widget .widget-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e2e8f0;
+}
+
+.sidebar-widget.service-list ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.sidebar-widget.service-list ul li {
+  margin-bottom: 10px;
+}
+
+.sidebar-widget.service-list ul li:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-widget.service-list ul li a {
+  display: block;
+  background: #ffffff;
+  padding: 14px 20px;
+  color: #475569;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sidebar-widget.service-list ul li a:hover,
+.sidebar-widget.service-list ul li.active a {
+  background: var(--brand-primary);
+  color: #ffffff;
+  border-color: var(--brand-primary);
+  transform: translateX(5px);
+}
+
+/* =========================================================
+   6. Search Bar & Dropdown Results
+   ========================================================= */
+.search-box-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 320px;
+}
+
+.search-input-form {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-input-form .form-control {
+  padding-right: 45px;
+  height: 44px;
+  border-radius: 25px;
+  border: 1px solid #e2e8f0;
+  font-size: 14px;
+}
+
+.search-input-form .search-btn {
+  position: absolute;
+  right: 6px;
+  background: var(--brand-primary);
+  color: #fff;
+  border: none;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.search-input-form .search-btn:hover {
+  background: var(--brand-primary-hover);
+}
+
+.search-results-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  border-radius: 12px;
+  margin-top: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  z-index: 1050;
+  overflow: hidden;
+}
+
+.search-results-dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.search-results-dropdown ul li {
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.search-results-dropdown ul li:last-child {
+  border-bottom: none;
+}
+
+.search-item-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  color: #334155;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.search-item-link:hover {
+  background-color: var(--brand-light);
+  color: var(--brand-primary);
+}
+
+.search-item-badge {
+  font-size: 11px;
+  background: #f1f5f9;
+  color: #64748b;
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+
+.view-all-results button {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 10px;
+  font-size: 13px;
+  color: var(--brand-primary);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.view-all-results button:hover {
+  background: #f8fafc;
+}

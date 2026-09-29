@@ -1,0 +1,78 @@
+import React from "react";
+import ContactForm from "./ContactForm";
+import Image from "next/image";
+
+const ContactFormContent = () => {
+  return (
+    <>
+      <section className="contact-area ptb-110">
+        <div className="container">
+          <div className="section-title">
+            <span>Message Us</span>
+            <h2>Drop us Message for any Query</h2>
+            <p>
+            We&apos;re here, eager to listen and assist. Reach out and let&apos;s connect the human way. Contact Us today!
+            </p>
+          </div>
+
+          <div className="contact-form">
+            <div className="row align-items-center">
+              <div className="col-lg-5 col-md-12">
+                <div className="contact-image">
+                  <Image src="/images/services-details/4.png" alt="image"  width={700} height={400}/>
+                </div>
+              </div>
+
+              <div className="col-lg-7 col-md-12">
+                <ContactForm />
+              </div>
+            </div>
+          </div>
+
+          {/* Contact info */}
+          <div className="contact-info">
+            <div className="contact-info-content">
+              <h3>Contact us by Phone Number or Email Address</h3>
+              <h2>
+                <span className="number">0493 396 991</span>
+                <span className="or">OR</span>
+                <span className="email">info@maranathagroup.com.au</span>
+              </h2>
+
+              <ul className="social">
+                <li>
+                  <a
+                    href="https://www.facebook.com/maranathasupport/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.linkedin.com/company/maranatha-wellbeing-support/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/maranatha_support"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+export default ContactFormContent;

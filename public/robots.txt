@@ -1,0 +1,7 @@
+# robots.txt for maranathagroup.com.au
+
+User-agent: *
+Disallow: /accounts
+Allow: /
+
+Sitemap: https://www.maranathagroup.com.au/sitemap.xml
